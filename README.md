@@ -1,7 +1,6 @@
 ## What is Advanced Encryption Standrad?
-AES (Advanced Encryption Standard) is a **symmetric key encryption algorithm** used globally to secure digital data. It operates on 128-bit blocks of data and supports key sizes of 128, 192, or 256 bits.
+AES (Advanced Encryption Standard) is a **symmetric key encryption algorithm** used globally to secure digital data. It operates on 128-bit blocks of data and supports key sizes of 128, 192, or 256 bits. <br>
 **No of Rounds for different size of bits:** <br>
-Rounds: <br>
 **1.** 10 for AES-128. <br>
 **2.** 12 for AES-192. <br>
 **3.** 14 for AES-256. <br>
