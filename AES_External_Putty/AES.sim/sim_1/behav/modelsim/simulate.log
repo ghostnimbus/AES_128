@@ -1,0 +1,37 @@
+# do {tb_simulate.do}
+# vsim -voptargs=""+acc"" -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -lib xil_defaultlib xil_defaultlib.tb xil_defaultlib.glbl 
+# Start time: 16:10:49 on Jul 21,2025
+# Loading xil_defaultlib.tb
+# Loading xil_defaultlib.AES_Final
+# Loading xil_defaultlib.freq_scaling
+# Loading xil_defaultlib.uart_rx
+# Loading xil_defaultlib.uart_to_aes_input
+# Loading xil_defaultlib.aes_top_encryption
+# Loading xil_defaultlib.key_expansion
+# Loading xil_defaultlib.g_function
+# Loading xil_defaultlib.sbox
+# Loading xil_defaultlib.sub_bytes
+# Loading xil_defaultlib.shift_rows
+# Loading xil_defaultlib.mix_columns
+# Loading xil_defaultlib.add_round_key
+# Loading xil_defaultlib.aes_top_decryption
+# Loading xil_defaultlib.inverse_mix_columns
+# Loading xil_defaultlib.inverse_shift_rows
+# Loading xil_defaultlib.inverse_sub_bytes
+# Loading xil_defaultlib.inverse_sbox
+# Loading xil_defaultlib.aes_output_to_uart
+# Loading xil_defaultlib.uart_tx
+# Loading xil_defaultlib.glbl
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'uart_receiver'.  Expected 5, found 4.
+#    Time: 0 ps  Iteration: 0  Instance: /tb/uut/uart_receiver File: ../../../../AES.srcs/sources_1/new/AES.v Line: 42
+# ** Warning: (vsim-3722) ../../../../AES.srcs/sources_1/new/AES.v(42): [TFMPC] - Missing connection for port 'rx_parity'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'uart_output_handler'.  Expected 8, found 7.
+#    Time: 0 ps  Iteration: 0  Instance: /tb/uut/uart_output_handler File: ../../../../AES.srcs/sources_1/new/AES.v Line: 84
+# ** Warning: (vsim-3722) ../../../../AES.srcs/sources_1/new/AES.v(84): [TFMPC] - Missing connection for port 'busy'.
+# 1
+# 1
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+# End time: 16:12:23 on Jul 21,2025, Elapsed time: 0:01:34
+# Errors: 0, Warnings: 4

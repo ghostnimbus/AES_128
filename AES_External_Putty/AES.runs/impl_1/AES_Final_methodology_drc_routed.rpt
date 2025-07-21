@@ -1,0 +1,938 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Wed Jul  2 18:30:58 2025
+| Host         : DESKTOP-1AGVPSV running 64-bit major release  (build 9200)
+| Command      : report_methodology -file AES_Final_methodology_drc_routed.rpt -pb AES_Final_methodology_drc_routed.pb -rpx AES_Final_methodology_drc_routed.rpx
+| Design       : AES_Final
+| Device       : xc7a200tffg1156-1
+| Speed File   : -1
+| Design State : Fully Routed
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max checks: <unlimited>
+             Checks found: 180
++-----------+------------------+--------------------------------+--------+
+| Rule      | Severity         | Description                    | Checks |
++-----------+------------------+--------------------------------+--------+
+| TIMING-17 | Critical Warning | Non-clocked sequential cell    | 50     |
+| TIMING-18 | Warning          | Missing input or output delay  | 1      |
+| TIMING-20 | Warning          | Non-clocked latch              | 128    |
+| LATCH-1   | Advisory         | Existing latches in the design | 1      |
++-----------+------------------+--------------------------------+--------+
+
+2. REPORT DETAILS
+-----------------
+TIMING-17#1 Critical Warning
+Non-clocked sequential cell  
+The clock pin uart_receiver/FSM_sequential_state_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#2 Critical Warning
+Non-clocked sequential cell  
+The clock pin uart_receiver/FSM_sequential_state_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#3 Critical Warning
+Non-clocked sequential cell  
+The clock pin uart_receiver/FSM_sequential_state_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#4 Critical Warning
+Non-clocked sequential cell  
+The clock pin uart_receiver/bit_counter_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#5 Critical Warning
+Non-clocked sequential cell  
+The clock pin uart_receiver/bit_counter_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#6 Critical Warning
+Non-clocked sequential cell  
+The clock pin uart_receiver/bit_counter_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#7 Critical Warning
+Non-clocked sequential cell  
+The clock pin uart_receiver/rx_complete_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#8 Critical Warning
+Non-clocked sequential cell  
+The clock pin uart_receiver/rx_data_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#9 Critical Warning
+Non-clocked sequential cell  
+The clock pin uart_receiver/rx_data_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#10 Critical Warning
+Non-clocked sequential cell  
+The clock pin uart_receiver/rx_data_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#11 Critical Warning
+Non-clocked sequential cell  
+The clock pin uart_receiver/rx_data_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#12 Critical Warning
+Non-clocked sequential cell  
+The clock pin uart_receiver/rx_data_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#13 Critical Warning
+Non-clocked sequential cell  
+The clock pin uart_receiver/rx_data_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#14 Critical Warning
+Non-clocked sequential cell  
+The clock pin uart_receiver/rx_data_reg[6]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#15 Critical Warning
+Non-clocked sequential cell  
+The clock pin uart_receiver/rx_data_reg[7]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#16 Critical Warning
+Non-clocked sequential cell  
+The clock pin uart_receiver/rx_msg_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#17 Critical Warning
+Non-clocked sequential cell  
+The clock pin uart_receiver/rx_msg_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#18 Critical Warning
+Non-clocked sequential cell  
+The clock pin uart_receiver/rx_msg_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#19 Critical Warning
+Non-clocked sequential cell  
+The clock pin uart_receiver/rx_msg_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#20 Critical Warning
+Non-clocked sequential cell  
+The clock pin uart_receiver/rx_msg_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#21 Critical Warning
+Non-clocked sequential cell  
+The clock pin uart_receiver/rx_msg_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#22 Critical Warning
+Non-clocked sequential cell  
+The clock pin uart_receiver/rx_msg_reg[6]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#23 Critical Warning
+Non-clocked sequential cell  
+The clock pin uart_receiver/rx_msg_reg[7]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#24 Critical Warning
+Non-clocked sequential cell  
+The clock pin uart_receiver/sample_counter_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#25 Critical Warning
+Non-clocked sequential cell  
+The clock pin uart_receiver/sample_counter_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#26 Critical Warning
+Non-clocked sequential cell  
+The clock pin uart_receiver/sample_counter_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#27 Critical Warning
+Non-clocked sequential cell  
+The clock pin uart_receiver/sample_counter_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#28 Critical Warning
+Non-clocked sequential cell  
+The clock pin uart_receiver/sample_counter_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#29 Critical Warning
+Non-clocked sequential cell  
+The clock pin uart_transmitter/FSM_sequential_state_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#30 Critical Warning
+Non-clocked sequential cell  
+The clock pin uart_transmitter/FSM_sequential_state_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#31 Critical Warning
+Non-clocked sequential cell  
+The clock pin uart_transmitter/FSM_sequential_state_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#32 Critical Warning
+Non-clocked sequential cell  
+The clock pin uart_transmitter/baud_counter_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#33 Critical Warning
+Non-clocked sequential cell  
+The clock pin uart_transmitter/baud_counter_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#34 Critical Warning
+Non-clocked sequential cell  
+The clock pin uart_transmitter/baud_counter_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#35 Critical Warning
+Non-clocked sequential cell  
+The clock pin uart_transmitter/baud_counter_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#36 Critical Warning
+Non-clocked sequential cell  
+The clock pin uart_transmitter/baud_counter_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#37 Critical Warning
+Non-clocked sequential cell  
+The clock pin uart_transmitter/bit_count_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#38 Critical Warning
+Non-clocked sequential cell  
+The clock pin uart_transmitter/bit_count_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#39 Critical Warning
+Non-clocked sequential cell  
+The clock pin uart_transmitter/bit_count_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#40 Critical Warning
+Non-clocked sequential cell  
+The clock pin uart_transmitter/bit_count_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#41 Critical Warning
+Non-clocked sequential cell  
+The clock pin uart_transmitter/shift_reg_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#42 Critical Warning
+Non-clocked sequential cell  
+The clock pin uart_transmitter/shift_reg_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#43 Critical Warning
+Non-clocked sequential cell  
+The clock pin uart_transmitter/shift_reg_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#44 Critical Warning
+Non-clocked sequential cell  
+The clock pin uart_transmitter/shift_reg_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#45 Critical Warning
+Non-clocked sequential cell  
+The clock pin uart_transmitter/shift_reg_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#46 Critical Warning
+Non-clocked sequential cell  
+The clock pin uart_transmitter/shift_reg_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#47 Critical Warning
+Non-clocked sequential cell  
+The clock pin uart_transmitter/shift_reg_reg[6]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#48 Critical Warning
+Non-clocked sequential cell  
+The clock pin uart_transmitter/shift_reg_reg[7]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#49 Critical Warning
+Non-clocked sequential cell  
+The clock pin uart_transmitter/tx_done_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#50 Critical Warning
+Non-clocked sequential cell  
+The clock pin uart_transmitter/tx_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-18#1 Warning
+Missing input or output delay  
+An input delay is missing on reset relative to the rising and/or falling clock edge(s) of sys_clk_pin.
+Related violations: <none>
+
+TIMING-20#1 Warning
+Non-clocked latch  
+The latch aes_decrypt/round_output[-1111110984] cannot be properly analyzed as its control pin aes_decrypt/round_output[-1111110984]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#2 Warning
+Non-clocked latch  
+The latch aes_decrypt/round_output[-1111110985] cannot be properly analyzed as its control pin aes_decrypt/round_output[-1111110985]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#3 Warning
+Non-clocked latch  
+The latch aes_decrypt/round_output[-1111110986] cannot be properly analyzed as its control pin aes_decrypt/round_output[-1111110986]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#4 Warning
+Non-clocked latch  
+The latch aes_decrypt/round_output[-1111110987] cannot be properly analyzed as its control pin aes_decrypt/round_output[-1111110987]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#5 Warning
+Non-clocked latch  
+The latch aes_decrypt/round_output[-1111110988] cannot be properly analyzed as its control pin aes_decrypt/round_output[-1111110988]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#6 Warning
+Non-clocked latch  
+The latch aes_decrypt/round_output[-1111110989] cannot be properly analyzed as its control pin aes_decrypt/round_output[-1111110989]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#7 Warning
+Non-clocked latch  
+The latch aes_decrypt/round_output[-1111110990] cannot be properly analyzed as its control pin aes_decrypt/round_output[-1111110990]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#8 Warning
+Non-clocked latch  
+The latch aes_decrypt/round_output[-1111110991] cannot be properly analyzed as its control pin aes_decrypt/round_output[-1111110991]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#9 Warning
+Non-clocked latch  
+The latch aes_decrypt/round_output[-1111110992] cannot be properly analyzed as its control pin aes_decrypt/round_output[-1111110992]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#10 Warning
+Non-clocked latch  
+The latch aes_decrypt/round_output[-1111110993] cannot be properly analyzed as its control pin aes_decrypt/round_output[-1111110993]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#11 Warning
+Non-clocked latch  
+The latch aes_decrypt/round_output[-1111110994] cannot be properly analyzed as its control pin aes_decrypt/round_output[-1111110994]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#12 Warning
+Non-clocked latch  
+The latch aes_decrypt/round_output[-1111110995] cannot be properly analyzed as its control pin aes_decrypt/round_output[-1111110995]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#13 Warning
+Non-clocked latch  
+The latch aes_decrypt/round_output[-1111110996] cannot be properly analyzed as its control pin aes_decrypt/round_output[-1111110996]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#14 Warning
+Non-clocked latch  
+The latch aes_decrypt/round_output[-1111110997] cannot be properly analyzed as its control pin aes_decrypt/round_output[-1111110997]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#15 Warning
+Non-clocked latch  
+The latch aes_decrypt/round_output[-1111110998] cannot be properly analyzed as its control pin aes_decrypt/round_output[-1111110998]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#16 Warning
+Non-clocked latch  
+The latch aes_decrypt/round_output[-1111110999] cannot be properly analyzed as its control pin aes_decrypt/round_output[-1111110999]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#17 Warning
+Non-clocked latch  
+The latch aes_decrypt/round_output[-1111111000] cannot be properly analyzed as its control pin aes_decrypt/round_output[-1111111000]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#18 Warning
+Non-clocked latch  
+The latch aes_decrypt/round_output[-1111111001] cannot be properly analyzed as its control pin aes_decrypt/round_output[-1111111001]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#19 Warning
+Non-clocked latch  
+The latch aes_decrypt/round_output[-1111111002] cannot be properly analyzed as its control pin aes_decrypt/round_output[-1111111002]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#20 Warning
+Non-clocked latch  
+The latch aes_decrypt/round_output[-1111111003] cannot be properly analyzed as its control pin aes_decrypt/round_output[-1111111003]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#21 Warning
+Non-clocked latch  
+The latch aes_decrypt/round_output[-1111111004] cannot be properly analyzed as its control pin aes_decrypt/round_output[-1111111004]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#22 Warning
+Non-clocked latch  
+The latch aes_decrypt/round_output[-1111111005] cannot be properly analyzed as its control pin aes_decrypt/round_output[-1111111005]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#23 Warning
+Non-clocked latch  
+The latch aes_decrypt/round_output[-1111111006] cannot be properly analyzed as its control pin aes_decrypt/round_output[-1111111006]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#24 Warning
+Non-clocked latch  
+The latch aes_decrypt/round_output[-1111111007] cannot be properly analyzed as its control pin aes_decrypt/round_output[-1111111007]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#25 Warning
+Non-clocked latch  
+The latch aes_decrypt/round_output[-1111111008] cannot be properly analyzed as its control pin aes_decrypt/round_output[-1111111008]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#26 Warning
+Non-clocked latch  
+The latch aes_decrypt/round_output[-1111111009] cannot be properly analyzed as its control pin aes_decrypt/round_output[-1111111009]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#27 Warning
+Non-clocked latch  
+The latch aes_decrypt/round_output[-1111111010] cannot be properly analyzed as its control pin aes_decrypt/round_output[-1111111010]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#28 Warning
+Non-clocked latch  
+The latch aes_decrypt/round_output[-1111111011] cannot be properly analyzed as its control pin aes_decrypt/round_output[-1111111011]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#29 Warning
+Non-clocked latch  
+The latch aes_decrypt/round_output[-1111111012] cannot be properly analyzed as its control pin aes_decrypt/round_output[-1111111012]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#30 Warning
+Non-clocked latch  
+The latch aes_decrypt/round_output[-1111111013] cannot be properly analyzed as its control pin aes_decrypt/round_output[-1111111013]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#31 Warning
+Non-clocked latch  
+The latch aes_decrypt/round_output[-1111111014] cannot be properly analyzed as its control pin aes_decrypt/round_output[-1111111014]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#32 Warning
+Non-clocked latch  
+The latch aes_decrypt/round_output[-1111111015] cannot be properly analyzed as its control pin aes_decrypt/round_output[-1111111015]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#33 Warning
+Non-clocked latch  
+The latch aes_decrypt/round_output[-1111111016] cannot be properly analyzed as its control pin aes_decrypt/round_output[-1111111016]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#34 Warning
+Non-clocked latch  
+The latch aes_decrypt/round_output[-1111111017] cannot be properly analyzed as its control pin aes_decrypt/round_output[-1111111017]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#35 Warning
+Non-clocked latch  
+The latch aes_decrypt/round_output[-1111111018] cannot be properly analyzed as its control pin aes_decrypt/round_output[-1111111018]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#36 Warning
+Non-clocked latch  
+The latch aes_decrypt/round_output[-1111111019] cannot be properly analyzed as its control pin aes_decrypt/round_output[-1111111019]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#37 Warning
+Non-clocked latch  
+The latch aes_decrypt/round_output[-1111111020] cannot be properly analyzed as its control pin aes_decrypt/round_output[-1111111020]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#38 Warning
+Non-clocked latch  
+The latch aes_decrypt/round_output[-1111111021] cannot be properly analyzed as its control pin aes_decrypt/round_output[-1111111021]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#39 Warning
+Non-clocked latch  
+The latch aes_decrypt/round_output[-1111111022] cannot be properly analyzed as its control pin aes_decrypt/round_output[-1111111022]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#40 Warning
+Non-clocked latch  
+The latch aes_decrypt/round_output[-1111111023] cannot be properly analyzed as its control pin aes_decrypt/round_output[-1111111023]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#41 Warning
+Non-clocked latch  
+The latch aes_decrypt/round_output[-1111111024] cannot be properly analyzed as its control pin aes_decrypt/round_output[-1111111024]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#42 Warning
+Non-clocked latch  
+The latch aes_decrypt/round_output[-1111111025] cannot be properly analyzed as its control pin aes_decrypt/round_output[-1111111025]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#43 Warning
+Non-clocked latch  
+The latch aes_decrypt/round_output[-1111111026] cannot be properly analyzed as its control pin aes_decrypt/round_output[-1111111026]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#44 Warning
+Non-clocked latch  
+The latch aes_decrypt/round_output[-1111111027] cannot be properly analyzed as its control pin aes_decrypt/round_output[-1111111027]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#45 Warning
+Non-clocked latch  
+The latch aes_decrypt/round_output[-1111111028] cannot be properly analyzed as its control pin aes_decrypt/round_output[-1111111028]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#46 Warning
+Non-clocked latch  
+The latch aes_decrypt/round_output[-1111111029] cannot be properly analyzed as its control pin aes_decrypt/round_output[-1111111029]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#47 Warning
+Non-clocked latch  
+The latch aes_decrypt/round_output[-1111111030] cannot be properly analyzed as its control pin aes_decrypt/round_output[-1111111030]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#48 Warning
+Non-clocked latch  
+The latch aes_decrypt/round_output[-1111111031] cannot be properly analyzed as its control pin aes_decrypt/round_output[-1111111031]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#49 Warning
+Non-clocked latch  
+The latch aes_decrypt/round_output[-1111111032] cannot be properly analyzed as its control pin aes_decrypt/round_output[-1111111032]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#50 Warning
+Non-clocked latch  
+The latch aes_decrypt/round_output[-1111111033] cannot be properly analyzed as its control pin aes_decrypt/round_output[-1111111033]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#51 Warning
+Non-clocked latch  
+The latch aes_decrypt/round_output[-1111111034] cannot be properly analyzed as its control pin aes_decrypt/round_output[-1111111034]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#52 Warning
+Non-clocked latch  
+The latch aes_decrypt/round_output[-1111111035] cannot be properly analyzed as its control pin aes_decrypt/round_output[-1111111035]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#53 Warning
+Non-clocked latch  
+The latch aes_decrypt/round_output[-1111111036] cannot be properly analyzed as its control pin aes_decrypt/round_output[-1111111036]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#54 Warning
+Non-clocked latch  
+The latch aes_decrypt/round_output[-1111111037] cannot be properly analyzed as its control pin aes_decrypt/round_output[-1111111037]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#55 Warning
+Non-clocked latch  
+The latch aes_decrypt/round_output[-1111111038] cannot be properly analyzed as its control pin aes_decrypt/round_output[-1111111038]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#56 Warning
+Non-clocked latch  
+The latch aes_decrypt/round_output[-1111111039] cannot be properly analyzed as its control pin aes_decrypt/round_output[-1111111039]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#57 Warning
+Non-clocked latch  
+The latch aes_decrypt/round_output[-1111111040] cannot be properly analyzed as its control pin aes_decrypt/round_output[-1111111040]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#58 Warning
+Non-clocked latch  
+The latch aes_decrypt/round_output[-1111111041] cannot be properly analyzed as its control pin aes_decrypt/round_output[-1111111041]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#59 Warning
+Non-clocked latch  
+The latch aes_decrypt/round_output[-1111111042] cannot be properly analyzed as its control pin aes_decrypt/round_output[-1111111042]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#60 Warning
+Non-clocked latch  
+The latch aes_decrypt/round_output[-1111111043] cannot be properly analyzed as its control pin aes_decrypt/round_output[-1111111043]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#61 Warning
+Non-clocked latch  
+The latch aes_decrypt/round_output[-1111111044] cannot be properly analyzed as its control pin aes_decrypt/round_output[-1111111044]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#62 Warning
+Non-clocked latch  
+The latch aes_decrypt/round_output[-1111111045] cannot be properly analyzed as its control pin aes_decrypt/round_output[-1111111045]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#63 Warning
+Non-clocked latch  
+The latch aes_decrypt/round_output[-1111111046] cannot be properly analyzed as its control pin aes_decrypt/round_output[-1111111046]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#64 Warning
+Non-clocked latch  
+The latch aes_decrypt/round_output[-1111111047] cannot be properly analyzed as its control pin aes_decrypt/round_output[-1111111047]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#65 Warning
+Non-clocked latch  
+The latch aes_decrypt/round_output[-1111111048] cannot be properly analyzed as its control pin aes_decrypt/round_output[-1111111048]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#66 Warning
+Non-clocked latch  
+The latch aes_decrypt/round_output[-1111111049] cannot be properly analyzed as its control pin aes_decrypt/round_output[-1111111049]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#67 Warning
+Non-clocked latch  
+The latch aes_decrypt/round_output[-1111111050] cannot be properly analyzed as its control pin aes_decrypt/round_output[-1111111050]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#68 Warning
+Non-clocked latch  
+The latch aes_decrypt/round_output[-1111111051] cannot be properly analyzed as its control pin aes_decrypt/round_output[-1111111051]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#69 Warning
+Non-clocked latch  
+The latch aes_decrypt/round_output[-1111111052] cannot be properly analyzed as its control pin aes_decrypt/round_output[-1111111052]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#70 Warning
+Non-clocked latch  
+The latch aes_decrypt/round_output[-1111111053] cannot be properly analyzed as its control pin aes_decrypt/round_output[-1111111053]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#71 Warning
+Non-clocked latch  
+The latch aes_decrypt/round_output[-1111111054] cannot be properly analyzed as its control pin aes_decrypt/round_output[-1111111054]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#72 Warning
+Non-clocked latch  
+The latch aes_decrypt/round_output[-1111111055] cannot be properly analyzed as its control pin aes_decrypt/round_output[-1111111055]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#73 Warning
+Non-clocked latch  
+The latch aes_decrypt/round_output[-1111111056] cannot be properly analyzed as its control pin aes_decrypt/round_output[-1111111056]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#74 Warning
+Non-clocked latch  
+The latch aes_decrypt/round_output[-1111111057] cannot be properly analyzed as its control pin aes_decrypt/round_output[-1111111057]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#75 Warning
+Non-clocked latch  
+The latch aes_decrypt/round_output[-1111111058] cannot be properly analyzed as its control pin aes_decrypt/round_output[-1111111058]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#76 Warning
+Non-clocked latch  
+The latch aes_decrypt/round_output[-1111111059] cannot be properly analyzed as its control pin aes_decrypt/round_output[-1111111059]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#77 Warning
+Non-clocked latch  
+The latch aes_decrypt/round_output[-1111111060] cannot be properly analyzed as its control pin aes_decrypt/round_output[-1111111060]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#78 Warning
+Non-clocked latch  
+The latch aes_decrypt/round_output[-1111111061] cannot be properly analyzed as its control pin aes_decrypt/round_output[-1111111061]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#79 Warning
+Non-clocked latch  
+The latch aes_decrypt/round_output[-1111111062] cannot be properly analyzed as its control pin aes_decrypt/round_output[-1111111062]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#80 Warning
+Non-clocked latch  
+The latch aes_decrypt/round_output[-1111111063] cannot be properly analyzed as its control pin aes_decrypt/round_output[-1111111063]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#81 Warning
+Non-clocked latch  
+The latch aes_decrypt/round_output[-1111111064] cannot be properly analyzed as its control pin aes_decrypt/round_output[-1111111064]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#82 Warning
+Non-clocked latch  
+The latch aes_decrypt/round_output[-1111111065] cannot be properly analyzed as its control pin aes_decrypt/round_output[-1111111065]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#83 Warning
+Non-clocked latch  
+The latch aes_decrypt/round_output[-1111111066] cannot be properly analyzed as its control pin aes_decrypt/round_output[-1111111066]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#84 Warning
+Non-clocked latch  
+The latch aes_decrypt/round_output[-1111111067] cannot be properly analyzed as its control pin aes_decrypt/round_output[-1111111067]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#85 Warning
+Non-clocked latch  
+The latch aes_decrypt/round_output[-1111111068] cannot be properly analyzed as its control pin aes_decrypt/round_output[-1111111068]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#86 Warning
+Non-clocked latch  
+The latch aes_decrypt/round_output[-1111111069] cannot be properly analyzed as its control pin aes_decrypt/round_output[-1111111069]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#87 Warning
+Non-clocked latch  
+The latch aes_decrypt/round_output[-1111111070] cannot be properly analyzed as its control pin aes_decrypt/round_output[-1111111070]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#88 Warning
+Non-clocked latch  
+The latch aes_decrypt/round_output[-1111111071] cannot be properly analyzed as its control pin aes_decrypt/round_output[-1111111071]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#89 Warning
+Non-clocked latch  
+The latch aes_decrypt/round_output[-1111111072] cannot be properly analyzed as its control pin aes_decrypt/round_output[-1111111072]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#90 Warning
+Non-clocked latch  
+The latch aes_decrypt/round_output[-1111111073] cannot be properly analyzed as its control pin aes_decrypt/round_output[-1111111073]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#91 Warning
+Non-clocked latch  
+The latch aes_decrypt/round_output[-1111111074] cannot be properly analyzed as its control pin aes_decrypt/round_output[-1111111074]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#92 Warning
+Non-clocked latch  
+The latch aes_decrypt/round_output[-1111111075] cannot be properly analyzed as its control pin aes_decrypt/round_output[-1111111075]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#93 Warning
+Non-clocked latch  
+The latch aes_decrypt/round_output[-1111111076] cannot be properly analyzed as its control pin aes_decrypt/round_output[-1111111076]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#94 Warning
+Non-clocked latch  
+The latch aes_decrypt/round_output[-1111111077] cannot be properly analyzed as its control pin aes_decrypt/round_output[-1111111077]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#95 Warning
+Non-clocked latch  
+The latch aes_decrypt/round_output[-1111111078] cannot be properly analyzed as its control pin aes_decrypt/round_output[-1111111078]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#96 Warning
+Non-clocked latch  
+The latch aes_decrypt/round_output[-1111111079] cannot be properly analyzed as its control pin aes_decrypt/round_output[-1111111079]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#97 Warning
+Non-clocked latch  
+The latch aes_decrypt/round_output[-1111111080] cannot be properly analyzed as its control pin aes_decrypt/round_output[-1111111080]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#98 Warning
+Non-clocked latch  
+The latch aes_decrypt/round_output[-1111111081] cannot be properly analyzed as its control pin aes_decrypt/round_output[-1111111081]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#99 Warning
+Non-clocked latch  
+The latch aes_decrypt/round_output[-1111111082] cannot be properly analyzed as its control pin aes_decrypt/round_output[-1111111082]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#100 Warning
+Non-clocked latch  
+The latch aes_decrypt/round_output[-1111111083] cannot be properly analyzed as its control pin aes_decrypt/round_output[-1111111083]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#101 Warning
+Non-clocked latch  
+The latch aes_decrypt/round_output[-1111111084] cannot be properly analyzed as its control pin aes_decrypt/round_output[-1111111084]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#102 Warning
+Non-clocked latch  
+The latch aes_decrypt/round_output[-1111111085] cannot be properly analyzed as its control pin aes_decrypt/round_output[-1111111085]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#103 Warning
+Non-clocked latch  
+The latch aes_decrypt/round_output[-1111111086] cannot be properly analyzed as its control pin aes_decrypt/round_output[-1111111086]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#104 Warning
+Non-clocked latch  
+The latch aes_decrypt/round_output[-1111111087] cannot be properly analyzed as its control pin aes_decrypt/round_output[-1111111087]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#105 Warning
+Non-clocked latch  
+The latch aes_decrypt/round_output[-1111111088] cannot be properly analyzed as its control pin aes_decrypt/round_output[-1111111088]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#106 Warning
+Non-clocked latch  
+The latch aes_decrypt/round_output[-1111111089] cannot be properly analyzed as its control pin aes_decrypt/round_output[-1111111089]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#107 Warning
+Non-clocked latch  
+The latch aes_decrypt/round_output[-1111111090] cannot be properly analyzed as its control pin aes_decrypt/round_output[-1111111090]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#108 Warning
+Non-clocked latch  
+The latch aes_decrypt/round_output[-1111111091] cannot be properly analyzed as its control pin aes_decrypt/round_output[-1111111091]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#109 Warning
+Non-clocked latch  
+The latch aes_decrypt/round_output[-1111111092] cannot be properly analyzed as its control pin aes_decrypt/round_output[-1111111092]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#110 Warning
+Non-clocked latch  
+The latch aes_decrypt/round_output[-1111111093] cannot be properly analyzed as its control pin aes_decrypt/round_output[-1111111093]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#111 Warning
+Non-clocked latch  
+The latch aes_decrypt/round_output[-1111111094] cannot be properly analyzed as its control pin aes_decrypt/round_output[-1111111094]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#112 Warning
+Non-clocked latch  
+The latch aes_decrypt/round_output[-1111111095] cannot be properly analyzed as its control pin aes_decrypt/round_output[-1111111095]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#113 Warning
+Non-clocked latch  
+The latch aes_decrypt/round_output[-1111111096] cannot be properly analyzed as its control pin aes_decrypt/round_output[-1111111096]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#114 Warning
+Non-clocked latch  
+The latch aes_decrypt/round_output[-1111111097] cannot be properly analyzed as its control pin aes_decrypt/round_output[-1111111097]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#115 Warning
+Non-clocked latch  
+The latch aes_decrypt/round_output[-1111111098] cannot be properly analyzed as its control pin aes_decrypt/round_output[-1111111098]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#116 Warning
+Non-clocked latch  
+The latch aes_decrypt/round_output[-1111111099] cannot be properly analyzed as its control pin aes_decrypt/round_output[-1111111099]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#117 Warning
+Non-clocked latch  
+The latch aes_decrypt/round_output[-1111111100] cannot be properly analyzed as its control pin aes_decrypt/round_output[-1111111100]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#118 Warning
+Non-clocked latch  
+The latch aes_decrypt/round_output[-1111111101] cannot be properly analyzed as its control pin aes_decrypt/round_output[-1111111101]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#119 Warning
+Non-clocked latch  
+The latch aes_decrypt/round_output[-1111111102] cannot be properly analyzed as its control pin aes_decrypt/round_output[-1111111102]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#120 Warning
+Non-clocked latch  
+The latch aes_decrypt/round_output[-1111111103] cannot be properly analyzed as its control pin aes_decrypt/round_output[-1111111103]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#121 Warning
+Non-clocked latch  
+The latch aes_decrypt/round_output[-1111111104] cannot be properly analyzed as its control pin aes_decrypt/round_output[-1111111104]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#122 Warning
+Non-clocked latch  
+The latch aes_decrypt/round_output[-1111111105] cannot be properly analyzed as its control pin aes_decrypt/round_output[-1111111105]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#123 Warning
+Non-clocked latch  
+The latch aes_decrypt/round_output[-1111111106] cannot be properly analyzed as its control pin aes_decrypt/round_output[-1111111106]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#124 Warning
+Non-clocked latch  
+The latch aes_decrypt/round_output[-1111111107] cannot be properly analyzed as its control pin aes_decrypt/round_output[-1111111107]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#125 Warning
+Non-clocked latch  
+The latch aes_decrypt/round_output[-1111111108] cannot be properly analyzed as its control pin aes_decrypt/round_output[-1111111108]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#126 Warning
+Non-clocked latch  
+The latch aes_decrypt/round_output[-1111111109] cannot be properly analyzed as its control pin aes_decrypt/round_output[-1111111109]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#127 Warning
+Non-clocked latch  
+The latch aes_decrypt/round_output[-1111111110] cannot be properly analyzed as its control pin aes_decrypt/round_output[-1111111110]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#128 Warning
+Non-clocked latch  
+The latch aes_decrypt/round_output[-1111111111] cannot be properly analyzed as its control pin aes_decrypt/round_output[-1111111111]/G is not reached by a timing clock
+Related violations: <none>
+
+LATCH-1#1 Advisory
+Existing latches in the design  
+There are 128 latches found in the design. Inferred latches are often the result of HDL coding mistakes, such as incomplete if or case statements.
+Related violations: <none>
+
+

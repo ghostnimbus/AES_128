@@ -1,0 +1,53 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Wed Jul  2 14:06:30 2025
+# Process ID         : 12212
+# Current directory  : F:/AES_External/AES_External
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent10548 F:\AES_External\AES_External\AES.xpr
+# Log file           : F:/AES_External/AES_External/vivado.log
+# Journal file       : F:/AES_External/AES_External\vivado.jou
+# Running On         : DESKTOP-1AGVPSV
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : AMD Ryzen 5 5500U with Radeon Graphics         
+# CPU Frequency      : 2096 MHz
+# CPU Physical cores : 6
+# CPU Logical cores  : 12
+# Host memory        : 16456 MB
+# Swap memory        : 4563 MB
+# Total Virtual      : 21019 MB
+# Available Virtual  : 1480 MB
+#-----------------------------------------------------------
+start_gui
+open_project F:/AES_External/AES_External/AES.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source tb.tcl
+close_sim
+launch_simulation
+source tb.tcl
+close_sim
+launch_simulation
+source tb.tcl
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+close [ open F:/AES_External/AES_External/AES.srcs/sources_1/new/freq_scaling.v w ]
+add_files F:/AES_External/AES_External/AES.srcs/sources_1/new/freq_scaling.v
+update_compile_order -fileset sources_1
+close [ open F:/AES_External/AES_External/AES.srcs/sources_1/new/uart_rx.v w ]
+add_files F:/AES_External/AES_External/AES.srcs/sources_1/new/uart_rx.v
+update_compile_order -fileset sources_1
+close [ open F:/AES_External/AES_External/AES.srcs/sources_1/new/uart_tx.v w ]
+add_files F:/AES_External/AES_External/AES.srcs/sources_1/new/uart_tx.v
+update_compile_order -fileset sources_1
+close [ open F:/AES_External/AES_External/AES.srcs/sources_1/new/uart_to_aes_input.v w ]
+add_files F:/AES_External/AES_External/AES.srcs/sources_1/new/uart_to_aes_input.v
+update_compile_order -fileset sources_1
+close [ open F:/AES_External/AES_External/AES.srcs/sources_1/new/aes_output_to_uart.v w ]
+add_files F:/AES_External/AES_External/AES.srcs/sources_1/new/aes_output_to_uart.v
+update_compile_order -fileset sources_1
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+close_sim

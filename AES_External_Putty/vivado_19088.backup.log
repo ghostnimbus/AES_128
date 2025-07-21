@@ -1,0 +1,273 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Wed Jul  2 15:45:57 2025
+# Process ID         : 19088
+# Current directory  : F:/AES_External/AES_External
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent9132 F:\AES_External\AES_External\AES.xpr
+# Log file           : F:/AES_External/AES_External/vivado.log
+# Journal file       : F:/AES_External/AES_External\vivado.jou
+# Running On         : DESKTOP-1AGVPSV
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : AMD Ryzen 5 5500U with Radeon Graphics         
+# CPU Frequency      : 2096 MHz
+# CPU Physical cores : 6
+# CPU Logical cores  : 12
+# Host memory        : 16456 MB
+# Swap memory        : 6720 MB
+# Total Virtual      : 23176 MB
+# Available Virtual  : 3706 MB
+#-----------------------------------------------------------
+start_gui
+open_project F:/AES_External/AES_External/AES.xpr
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at F:/Vivado/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at F:/Vivado/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at F:/Vivado/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'F:/AES_External/AES_External/AES.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/Vivado/Vivado/2024.2/data/ip'.
+open_project: Time (s): cpu = 00:00:34 ; elapsed = 00:00:16 . Memory (MB): peak = 1291.168 ; gain = 187.270
+update_compile_order -fileset sources_1
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\AES_External\AES_External\AES.srcs\sim_1\new\tb.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\AES_External\AES_External\AES.srcs\sources_1\new\AES.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\AES_External\AES_External\AES.srcs\sources_1\new\uart_rx.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\AES_External\AES_External\AES.srcs\sources_1\new\uart_rx.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\AES_External\AES_External\AES.srcs\sources_1\new\uart_rx.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\AES_External\AES_External\AES.srcs\sim_1\new\tb.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\AES_External\AES_External\AES.srcs\sources_1\new\AES.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\AES_External\AES_External\AES.srcs\sources_1\new\uart_rx.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\AES_External\AES_External\AES.srcs\sim_1\new\tb.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\AES_External\AES_External\AES.srcs\sim_1\new\tb.v:]
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'F:/AES_External/AES_External/AES.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'F:/Vivado/Vivado/2024.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'F:/AES_External/AES_External/AES.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/AES_External/AES_External/AES.srcs/sources_1/new/AES.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AES_Final
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/AES_External/AES_External/AES.srcs/sources_1/new/add_round_key.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module add_round_key
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/AES_External/AES_External/AES.srcs/sources_1/new/aes_output_to_uart.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module aes_output_to_uart
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/AES_External/AES_External/AES.srcs/sources_1/new/aes_top_decryption.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module aes_top_decryption
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/AES_External/AES_External/AES.srcs/sources_1/new/aes_top_encryption.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module aes_top_encryption
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/AES_External/AES_External/AES.srcs/sources_1/new/freq_scaling.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module freq_scaling
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/AES_External/AES_External/AES.srcs/sources_1/new/g_function.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module g_function
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/AES_External/AES_External/AES.srcs/sources_1/new/inverse_mix_columns.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module inverse_mix_columns
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/AES_External/AES_External/AES.srcs/sources_1/new/inverse_sbox.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module inverse_sbox
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/AES_External/AES_External/AES.srcs/sources_1/new/inverse_shift_rows.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module inverse_shift_rows
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/AES_External/AES_External/AES.srcs/sources_1/new/inverse_sub_bytes.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module inverse_sub_bytes
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/AES_External/AES_External/AES.srcs/sources_1/new/key_expansion.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module key_expansion
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/AES_External/AES_External/AES.srcs/sources_1/new/mix_columns.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mix_columns
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/AES_External/AES_External/AES.srcs/sources_1/new/sbox.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sbox
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/AES_External/AES_External/AES.srcs/sources_1/new/shift_rows.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module shift_rows
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/AES_External/AES_External/AES.srcs/sources_1/new/sub_bytes.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sub_bytes
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/AES_External/AES_External/AES.srcs/sources_1/new/uart_rx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_rx
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/AES_External/AES_External/AES.srcs/sources_1/new/uart_to_aes_input.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_to_aes_input
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/AES_External/AES_External/AES.srcs/sources_1/new/uart_tx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_tx
+INFO: [VRFC 10-2263] Analyzing Verilog file "F:/AES_External/AES_External/AES.srcs/sim_1/new/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 1323.441 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '7' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'F:/AES_External/AES_External/AES.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2024.2.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: F:/Vivado/Vivado/2024.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.freq_scaling
+Compiling module xil_defaultlib.uart_rx
+Compiling module xil_defaultlib.uart_to_aes_input
+Compiling module xil_defaultlib.sbox
+Compiling module xil_defaultlib.g_function
+Compiling module xil_defaultlib.key_expansion
+Compiling module xil_defaultlib.sub_bytes
+Compiling module xil_defaultlib.shift_rows
+Compiling module xil_defaultlib.mix_columns
+Compiling module xil_defaultlib.add_round_key
+Compiling module xil_defaultlib.aes_top_encryption
+Compiling module xil_defaultlib.inverse_mix_columns
+Compiling module xil_defaultlib.inverse_shift_rows
+Compiling module xil_defaultlib.inverse_sbox
+Compiling module xil_defaultlib.inverse_sub_bytes
+Compiling module xil_defaultlib.aes_top_decryption
+Compiling module xil_defaultlib.aes_output_to_uart
+Compiling module xil_defaultlib.uart_tx
+Compiling module xil_defaultlib.AES_Final
+Compiling module xil_defaultlib.tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:12 . Memory (MB): peak = 1323.441 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '12' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'F:/AES_External/AES_External/AES.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_behav -key {Behavioral:sim_1:Functional:tb} -tclbatch {tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 1357.250 ; gain = 20.832
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:14 ; elapsed = 00:00:27 . Memory (MB): peak = 1357.250 ; gain = 33.828
+file mkdir F:/AES_External/AES_External/AES.srcs/constrs_1
+file mkdir F:/AES_External/AES_External/AES.srcs/constrs_1/new
+close [ open F:/AES_External/AES_External/AES.srcs/constrs_1/new/constraint.xdc w ]
+add_files -fileset constrs_1 F:/AES_External/AES_External/AES.srcs/constrs_1/new/constraint.xdc
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\AES_External\AES_External\AES.srcs\sim_1\new\tb.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\AES_External\AES_External\AES.srcs\sources_1\new\AES.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\AES_External\AES_External\AES.srcs\sources_1\new\uart_rx.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\AES_External\AES_External\AES.srcs\sources_1\new\uart_rx.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\AES_External\AES_External\AES.srcs\sources_1\new\uart_rx.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\AES_External\AES_External\AES.srcs\sim_1\new\tb.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\AES_External\AES_External\AES.srcs\sources_1\new\AES.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\AES_External\AES_External\AES.srcs\sources_1\new\uart_rx.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\AES_External\AES_External\AES.srcs\sim_1\new\tb.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\AES_External\AES_External\AES.srcs\sim_1\new\tb.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\AES_External\AES_External\AES.srcs\sim_1\new\tb.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\AES_External\AES_External\AES.srcs\sources_1\new\AES.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\AES_External\AES_External\AES.srcs\sources_1\new\uart_rx.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\AES_External\AES_External\AES.srcs\sources_1\new\uart_rx.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\AES_External\AES_External\AES.srcs\sources_1\new\uart_rx.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\AES_External\AES_External\AES.srcs\sim_1\new\tb.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\AES_External\AES_External\AES.srcs\sources_1\new\AES.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\AES_External\AES_External\AES.srcs\sources_1\new\uart_rx.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\AES_External\AES_External\AES.srcs\sim_1\new\tb.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\AES_External\AES_External\AES.srcs\sim_1\new\tb.v:]
+launch_runs impl_1 -jobs 6
+[Wed Jul  2 17:46:19 2025] Launched synth_1...
+Run output will be captured here: F:/AES_External/AES_External/AES.runs/synth_1/runme.log
+[Wed Jul  2 17:46:19 2025] Launched impl_1...
+Run output will be captured here: F:/AES_External/AES_External/AES.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Device 21-403] Loading part xc7a200tffg1156-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.097 . Memory (MB): peak = 1599.074 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 848 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2024.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Read ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.074 . Memory (MB): peak = 1701.426 ; gain = 0.949
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+INFO: [Designutils 20-5722] Start Reading Physical Databases.
+Reading placement.
+Read Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 2347.680 ; gain = 0.000
+Reading placer database...
+Read Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 2347.680 ; gain = 0.000
+Read PlaceDB: Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 2351.773 ; gain = 4.094
+Read PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2351.773 ; gain = 0.000
+Reading routing.
+Read RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.240 . Memory (MB): peak = 2351.773 ; gain = 0.000
+Read Physdb Files: Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 2351.773 ; gain = 4.094
+Restored from archive | CPU: 2.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 2351.773 ; gain = 4.094
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 2351.773 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:01:12 ; elapsed = 00:00:51 . Memory (MB): peak = 2690.148 ; gain = 1310.332
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\AES_External\AES_External\AES.srcs\sim_1\new\tb.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\AES_External\AES_External\AES.srcs\sources_1\new\AES.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\AES_External\AES_External\AES.srcs\sources_1\new\uart_rx.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\AES_External\AES_External\AES.srcs\sources_1\new\uart_rx.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\AES_External\AES_External\AES.srcs\sources_1\new\uart_rx.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\AES_External\AES_External\AES.srcs\sim_1\new\tb.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\AES_External\AES_External\AES.srcs\sources_1\new\AES.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\AES_External\AES_External\AES.srcs\sources_1\new\uart_rx.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\AES_External\AES_External\AES.srcs\sim_1\new\tb.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\AES_External\AES_External\AES.srcs\sim_1\new\tb.v:]
+update_compile_order -fileset sources_1
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\AES_External\AES_External\AES.srcs\sim_1\new\tb.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\AES_External\AES_External\AES.srcs\sources_1\new\AES.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\AES_External\AES_External\AES.srcs\sources_1\new\uart_rx.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\AES_External\AES_External\AES.srcs\sources_1\new\uart_rx.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\AES_External\AES_External\AES.srcs\sources_1\new\uart_rx.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\AES_External\AES_External\AES.srcs\sim_1\new\tb.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\AES_External\AES_External\AES.srcs\sources_1\new\AES.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\AES_External\AES_External\AES.srcs\sources_1\new\uart_rx.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\AES_External\AES_External\AES.srcs\sim_1\new\tb.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\AES_External\AES_External\AES.srcs\sim_1\new\tb.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\AES_External\AES_External\AES.srcs\sim_1\new\tb.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\AES_External\AES_External\AES.srcs\sources_1\new\AES.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\AES_External\AES_External\AES.srcs\sources_1\new\uart_rx.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\AES_External\AES_External\AES.srcs\sources_1\new\uart_rx.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\AES_External\AES_External\AES.srcs\sources_1\new\uart_rx.v:]
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'AES_Final_tb'
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\AES_External\AES_External\AES.srcs\sim_1\new\tb.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\AES_External\AES_External\AES.srcs\sources_1\new\AES.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\AES_External\AES_External\AES.srcs\sources_1\new\uart_rx.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\AES_External\AES_External\AES.srcs\sources_1\new\uart_rx.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\AES_External\AES_External\AES.srcs\sources_1\new\uart_rx.v:]
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+boost::filesystem::remove: The process cannot access the file because it is being used by another process: "F:/AES_External/AES_External/AES.sim/sim_1/behav/xsim/simulate.log"
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\AES_External\AES_External\AES.srcs\sim_1\new\tb.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\AES_External\AES_External\AES.srcs\sources_1\new\AES.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\AES_External\AES_External\AES.srcs\sources_1\new\uart_rx.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\AES_External\AES_External\AES.srcs\sim_1\new\tb.v:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [F:\AES_External\AES_External\AES.srcs\sim_1\new\tb.v:]
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'AES_Final_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+boost::filesystem::remove: The process cannot access the file because it is being used by another process: "F:/AES_External/AES_External/AES.sim/sim_1/behav/xsim/simulate.log"
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'AES_Final_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+boost::filesystem::remove: The process cannot access the file because it is being used by another process: "F:/AES_External/AES_External/AES.sim/sim_1/behav/xsim/simulate.log"
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Jul  2 19:44:07 2025...

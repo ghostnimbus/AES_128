@@ -1,0 +1,126 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Wed Jul  2 18:27:02 2025
+| Host         : DESKTOP-1AGVPSV running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file AES_Final_control_sets_placed.rpt
+| Design       : AES_Final
+| Device       : xc7a200t
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    48 |
+|    Minimum number of control sets                        |    48 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    68 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    48 |
+| >= 0 to < 4        |     4 |
+| >= 4 to < 6        |     5 |
+| >= 6 to < 8        |     2 |
+| >= 8 to < 10       |     2 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     1 |
+| >= 14 to < 16      |     0 |
+| >= 16              |    34 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             148 |          134 |
+| No           | No                    | Yes                    |               6 |            6 |
+| No           | Yes                   | No                     |               5 |            1 |
+| Yes          | No                    | No                     |              31 |           10 |
+| Yes          | No                    | Yes                    |            4262 |         1546 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++---------------------+-------------------------------------------------+---------------------------------+------------------+----------------+--------------+
+|     Clock Signal    |                  Enable Signal                  |         Set/Reset Signal        | Slice Load Count | Bel Load Count | Bels / Slice |
++---------------------+-------------------------------------------------+---------------------------------+------------------+----------------+--------------+
+|  clk_100M_IBUF_BUFG |                                                 |                                 |                1 |              1 |         1.00 |
+|  clk_3125KHz_BUFG   | uart_transmitter/tx_i_1_n_1                     |                                 |                1 |              1 |         1.00 |
+|  clk_100M_IBUF_BUFG | aes_decrypt/computing_0                         | reset_IBUF                      |                1 |              2 |         2.00 |
+|  clk_100M_IBUF_BUFG | aes_encrypt/key_exp/computing_1                 | reset_IBUF                      |                1 |              2 |         2.00 |
+|  clk_100M_IBUF_BUFG | aes_decrypt/key_exp/round_counter[3]_i_1__0_n_1 | reset_IBUF                      |                1 |              4 |         4.00 |
+|  clk_100M_IBUF_BUFG | aes_encrypt/key_exp/round_counter[3]_i_1_n_1    | reset_IBUF                      |                2 |              4 |         2.00 |
+|  clk_100M_IBUF_BUFG |                                                 | freq_divider/counter[4]_i_1_n_1 |                1 |              5 |         5.00 |
+|  clk_3125KHz_BUFG   | uart_receiver/sample_counter[4]_i_1_n_1         |                                 |                2 |              5 |         2.50 |
+|  clk_3125KHz_BUFG   | uart_transmitter/baud_counter[4]_i_1_n_1        |                                 |                2 |              5 |         2.50 |
+|  clk_100M_IBUF_BUFG |                                                 | reset_IBUF                      |                6 |              6 |         1.00 |
+|  clk_100M_IBUF_BUFG | uart_input_handler/byte_count                   | reset_IBUF                      |                1 |              6 |         6.00 |
+|  clk_100M_IBUF_BUFG | uart_output_handler/byte_index10_out            | reset_IBUF                      |                1 |              8 |         8.00 |
+|  clk_3125KHz_BUFG   | uart_receiver/rx_msg[7]_i_1_n_1                 |                                 |                2 |              8 |         4.00 |
+|  clk_3125KHz_BUFG   | uart_transmitter/shift_reg[7]_i_1_n_1           |                                 |                3 |             12 |         4.00 |
+|  clk_3125KHz_BUFG   |                                                 |                                 |                5 |             19 |         3.80 |
+|  clk_100M_IBUF_BUFG | aes_encrypt/key_exp/i___11_n_1                  | reset_IBUF                      |               41 |            128 |         3.12 |
+|  clk_100M_IBUF_BUFG | aes_encrypt/key_exp/i___8_n_1                   | reset_IBUF                      |               49 |            128 |         2.61 |
+|  clk_100M_IBUF_BUFG | aes_encrypt/key_exp/i___6_n_1                   | reset_IBUF                      |               41 |            128 |         3.12 |
+|  clk_100M_IBUF_BUFG | aes_encrypt/key_exp/i___2_n_1                   | reset_IBUF                      |               42 |            128 |         3.05 |
+|  clk_100M_IBUF_BUFG | aes_encrypt/key_exp/i___7_n_1                   | reset_IBUF                      |               38 |            128 |         3.37 |
+|  clk_100M_IBUF_BUFG | aes_encrypt/key_exp/data_ready_reg_0[0]         | reset_IBUF                      |               48 |            128 |         2.67 |
+|  clk_100M_IBUF_BUFG | uart_input_handler/E[0]                         | reset_IBUF                      |               39 |            128 |         3.28 |
+|  clk_100M_IBUF_BUFG | uart_input_handler/plaintext_buffer_0           | reset_IBUF                      |               42 |            128 |         3.05 |
+|  clk_100M_IBUF_BUFG | uart_input_handler/key_buffer_1                 | reset_IBUF                      |               32 |            128 |         4.00 |
+|  clk_100M_IBUF_BUFG | uart_input_handler/computing0_0                 | reset_IBUF                      |               49 |            128 |         2.61 |
+|  clk_100M_IBUF_BUFG | uart_input_handler/computing0                   | reset_IBUF                      |               35 |            128 |         3.66 |
+|  clk_100M_IBUF_BUFG | uart_input_handler/computing_reg[0]             | reset_IBUF                      |               44 |            128 |         2.91 |
+|  clk_100M_IBUF_BUFG | aes_decrypt/key_exp/i___3_n_1                   | reset_IBUF                      |               54 |            128 |         2.37 |
+|  clk_100M_IBUF_BUFG | aes_decrypt/key_exp/i___5_n_1                   | reset_IBUF                      |               48 |            128 |         2.67 |
+|  clk_100M_IBUF_BUFG | aes_decrypt/key_exp/i___9_n_1                   | reset_IBUF                      |               41 |            128 |         3.12 |
+|  clk_100M_IBUF_BUFG | aes_decrypt/key_exp/i___10_n_1                  | reset_IBUF                      |               58 |            128 |         2.21 |
+|  clk_100M_IBUF_BUFG | aes_decrypt/key_exp/i___8_n_1                   | reset_IBUF                      |               38 |            128 |         3.37 |
+|  clk_100M_IBUF_BUFG | aes_decrypt/key_exp/i___7_n_1                   | reset_IBUF                      |               52 |            128 |         2.46 |
+|  clk_100M_IBUF_BUFG | aes_decrypt/key_exp/i___1_n_1                   | reset_IBUF                      |               49 |            128 |         2.61 |
+|  clk_100M_IBUF_BUFG | aes_decrypt/key_exp/i___6_n_1                   | reset_IBUF                      |               49 |            128 |         2.61 |
+|  clk_100M_IBUF_BUFG | aes_decrypt/key_exp/i___2_n_1                   | reset_IBUF                      |               50 |            128 |         2.56 |
+|  clk_100M_IBUF_BUFG | aes_decrypt/plaintext[127]_i_1_n_1              | reset_IBUF                      |               51 |            128 |         2.51 |
+|  clk_100M_IBUF_BUFG | aes_decrypt/key_exp/i___4_n_1                   | reset_IBUF                      |               47 |            128 |         2.72 |
+|  clk_100M_IBUF_BUFG | aes_encrypt/key_exp/i___3_n_1                   | reset_IBUF                      |               53 |            128 |         2.42 |
+|  clk_100M_IBUF_BUFG | aes_encrypt/key_exp/i___5_n_1                   | reset_IBUF                      |               39 |            128 |         3.28 |
+|  clk_100M_IBUF_BUFG | aes_encrypt/key_exp/i___9_n_1                   | reset_IBUF                      |               34 |            128 |         3.76 |
+|  clk_100M_IBUF_BUFG | aes_encrypt/key_exp/i___4_n_1                   | reset_IBUF                      |               52 |            128 |         2.46 |
+|  clk_100M_IBUF_BUFG | aes_encrypt/key_exp/i___10_n_1                  | reset_IBUF                      |               61 |            128 |         2.10 |
+|  n_0_3645_BUFG      |                                                 |                                 |              128 |            128 |         1.00 |
+|  clk_100M_IBUF_BUFG | uart_output_handler/buffer                      | reset_IBUF                      |               37 |            132 |         3.57 |
+|  clk_100M_IBUF_BUFG | aes_encrypt/key_exp/E[0]                        | reset_IBUF                      |               48 |            132 |         2.75 |
+|  clk_100M_IBUF_BUFG | aes_decrypt/current_state                       | reset_IBUF                      |               61 |            132 |         2.16 |
+|  clk_100M_IBUF_BUFG | uart_input_handler/data_ready                   | reset_IBUF                      |              117 |            256 |         2.19 |
++---------------------+-------------------------------------------------+---------------------------------+------------------+----------------+--------------+
+
+
