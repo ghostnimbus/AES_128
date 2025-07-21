@@ -7,10 +7,10 @@ Rounds: <br>
 **3.** 14 for AES-256. <br>
 
 
-AES is widely adopted due to its:
-🔐 Strong security
-⚡ High performance
-💻 Suitability for both software and hardware implementations
+AES is widely adopted due to its: <br>
+🔐 Strong security <br>
+⚡ High performance <br>
+💻 Suitability for both software and hardware implementations <br>
 
 
 ## About this project
