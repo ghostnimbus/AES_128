@@ -1,0 +1,97 @@
+$date
+   Mon Jul 21 16:00:26 2025
+$end
+
+$version
+  2024.2.0
+  $dumpfile ("tb_sbox.vcd") 
+$end
+
+$timescale
+  1ps
+$end
+
+$scope module tb_sbox $end
+$var reg 8 ! in [7:0] $end
+$var wire 8 " out [7:0] $end
+$scope module uut $end
+$var wire 8 # in [7:0] $end
+$var reg 8 $ out [7:0] $end
+$var reg 8 % inverse [7:0] $end
+$var integer 32 & i [31:0] $end
+$var integer 32 ' j [31:0] $end
+$scope function gf_mul $end
+$var reg 8 ( gf_mul [7:0] $end
+$var reg 8 ) a [7:0] $end
+$var reg 8 * b [7:0] $end
+$var reg 8 + p [7:0] $end
+$var integer 32 , k [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+
+#0
+$dumpvars
+b0 !
+b1100011 "
+b0 #
+b1100011 $
+b0 %
+bx &
+bx '
+bx (
+bx )
+bx *
+bx +
+bx ,
+$end
+
+#10000
+b1010011 !
+b11101101 "
+b1010011 #
+b11101101 $
+b11001010 %
+b100000000 &
+b11001100 (
+b11100 )
+b0 *
+b11001100 +
+b1000 ,
+
+#20000
+b1111100 !
+b10000 "
+b1111100 #
+b10000 $
+b10100001 %
+b1101100 (
+b11001000 )
+b0 *
+b1101100 +
+b1000 ,
+
+#30000
+b1001 !
+b1 "
+b1001 #
+b1 $
+b1001111 %
+b1000110 (
+b11000011 )
+b0 *
+b1000110 +
+b1000 ,
+
+#40000
+b11111 !
+b11000000 "
+b11111 #
+b11000000 $
+b10110010 %
+b11011 (
+b110010 )
+b0 *
+b11011 +
+b1000 ,
