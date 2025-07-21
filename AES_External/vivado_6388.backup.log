@@ -1,0 +1,126 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Wed Jul  2 20:29:50 2025
+# Process ID         : 6388
+# Current directory  : C:/Users/LeeladithyaSagar/Desktop/AES_External
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent4232 C:\Users\LeeladithyaSagar\Desktop\AES_External\AES.xpr
+# Log file           : C:/Users/LeeladithyaSagar/Desktop/AES_External/vivado.log
+# Journal file       : C:/Users/LeeladithyaSagar/Desktop/AES_External\vivado.jou
+# Running On         : DESKTOP-JFF140U
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 19045
+# Processor Detail   : 11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz
+# CPU Frequency      : 1382 MHz
+# CPU Physical cores : 4
+# CPU Logical cores  : 8
+# Host memory        : 8320 MB
+# Swap memory        : 15252 MB
+# Total Virtual      : 23572 MB
+# Available Virtual  : 4415 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/LeeladithyaSagar/Desktop/AES_External/AES.xpr
+INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/LeeladithyaSagar/Desktop/AES_External/AES.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx_Vivado/Vivado/2024.2/data/ip'.
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/LeeladithyaSagar/Desktop/AES_External/AES.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'D:/Xilinx_Vivado/Vivado/2024.2/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/LeeladithyaSagar/Desktop/AES_External/AES.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/LeeladithyaSagar/Desktop/AES_External/AES.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2024.2.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: D:/Xilinx_Vivado/Vivado/2024.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_behav xil_defaultlib.tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/LeeladithyaSagar/Desktop/AES_External/AES.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_behav -key {Behavioral:sim_1:Functional:tb} -tclbatch {tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+======Encryption======
+PlainText:  1234567890abcdef1234567890abcdef
+CipherKey:  fedcba9876543210fedcba9876543210
+=======================
+Round 0 Output: ece8ece0e6ffffffece8ece0e6ffffff
+Round 1 Output: ba42151defd3436d32ca9d95675bcbe5
+Round 2 Output: 258829cbd09257af6dd121b871ade40b
+Round 3 Output: 14d8cfceebc6ab7f3ab9a8c523fcb907
+Round 4 Output: a9d908eb57920eb20b3312c2b636ee5c
+Round 5 Output: cc51ec3bb3e754174769eb22c91a3960
+Round 6 Output: 5f4e6903f72625434c1fdaa82a33d612
+Round 7 Output: 47d4f828952154f3a84fff3a4a6d0f56
+Round 8 Output: c29ac2d2306fe3d4617d44452efa8c80
+Round 9 Output: 0c03c31e018d3e95ebeeb6be1b2736b8
+Round 10 Output: 0cc5712c4cc5f341ed5d3e157eca8d0f
+Encryption Done.
+=======================
+CipherText: 0cc5712c4cc5f341ed5d3e157eca8d0f
+=======================
+======Decryption======
+=======================
+Round 10 Output: 0c03c31e018d3e95ebeeb6be1b2736b8
+Round 9 Output: c29ac2d2306fe3d4617d44452efa8c80
+Round 8 Output: 47d4f828952154f3a84fff3a4a6d0f56
+Round 7 Output: 5f4e6903f72625434c1fdaa82a33d612
+Round 6 Output: cc51ec3bb3e754174769eb22c91a3960
+Round 5 Output: a9d908eb57920eb20b3312c2b636ee5c
+Round 4 Output: 14d8cfceebc6ab7f3ab9a8c523fcb907
+Round 3 Output: 258829cbd09257af6dd121b871ade40b
+Round 2 Output: ba42151defd3436d32ca9d95675bcbe5
+Round 1 Output: ece8ece0e6ffffffece8ece0e6ffffff
+Round 0: 1234567890abcdef1234567890abcdef
+Decryption Done.
+==================
+Final Plaintext: 1234567890abcdef1234567890abcdef
+==============
+
+================ [OUTPUT] ================
+Encrypted CipherText     = 0cc5712c4cc5f341ed5d3e157eca8d0f
+Decrypted PlainText      = 1234567890abcdef1234567890abcdef
+==========================================
+
+$finish called at time : 274 ns : File "C:/Users/LeeladithyaSagar/Desktop/AES_External/AES.srcs/sim_1/new/tb.v" Line 63
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1175.023 ; gain = 20.164
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Jul  2 20:32:16 2025...

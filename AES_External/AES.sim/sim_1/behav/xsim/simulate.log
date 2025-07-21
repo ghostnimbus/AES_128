@@ -1,0 +1,44 @@
+Time resolution is 1 ps
+======Encryption======
+PlainText:  1234567890abcdef1234567890abcdef
+CipherKey:  fedcba9876543210fedcba9876543210
+=======================
+Round 0 Output: ece8ece0e6ffffffece8ece0e6ffffff
+Round 1 Output: ba42151defd3436d32ca9d95675bcbe5
+Round 2 Output: 258829cbd09257af6dd121b871ade40b
+Round 3 Output: 14d8cfceebc6ab7f3ab9a8c523fcb907
+Round 4 Output: a9d908eb57920eb20b3312c2b636ee5c
+Round 5 Output: cc51ec3bb3e754174769eb22c91a3960
+Round 6 Output: 5f4e6903f72625434c1fdaa82a33d612
+Round 7 Output: 47d4f828952154f3a84fff3a4a6d0f56
+Round 8 Output: c29ac2d2306fe3d4617d44452efa8c80
+Round 9 Output: 0c03c31e018d3e95ebeeb6be1b2736b8
+Round 10 Output: 0cc5712c4cc5f341ed5d3e157eca8d0f
+Encryption Done.
+=======================
+CipherText: 0cc5712c4cc5f341ed5d3e157eca8d0f
+=======================
+======Decryption======
+=======================
+Round 10 Output: 0c03c31e018d3e95ebeeb6be1b2736b8
+Round 9 Output: c29ac2d2306fe3d4617d44452efa8c80
+Round 8 Output: 47d4f828952154f3a84fff3a4a6d0f56
+Round 7 Output: 5f4e6903f72625434c1fdaa82a33d612
+Round 6 Output: cc51ec3bb3e754174769eb22c91a3960
+Round 5 Output: a9d908eb57920eb20b3312c2b636ee5c
+Round 4 Output: 14d8cfceebc6ab7f3ab9a8c523fcb907
+Round 3 Output: 258829cbd09257af6dd121b871ade40b
+Round 2 Output: ba42151defd3436d32ca9d95675bcbe5
+Round 1 Output: ece8ece0e6ffffffece8ece0e6ffffff
+Round 0: 1234567890abcdef1234567890abcdef
+Decryption Done.
+==================
+Final Plaintext: 1234567890abcdef1234567890abcdef
+==============
+
+================ [OUTPUT] ================
+Encrypted CipherText     = 0cc5712c4cc5f341ed5d3e157eca8d0f
+Decrypted PlainText      = 1234567890abcdef1234567890abcdef
+==========================================
+
+$finish called at time : 274 ns : File "C:/Users/LeeladithyaSagar/Desktop/Mini_Project/AES_External/AES.srcs/sim_1/new/tb.v" Line 63

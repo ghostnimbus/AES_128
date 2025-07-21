@@ -1,0 +1,23 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../AES.srcs/sources_1/new/AES.v" \
+"../../../../AES.srcs/sources_1/new/add_round_key.v" \
+"../../../../AES.srcs/sources_1/new/aes_top_decryption.v" \
+"../../../../AES.srcs/sources_1/new/aes_top_encryption.v" \
+"../../../../AES.srcs/sources_1/new/g_function.v" \
+"../../../../AES.srcs/sources_1/new/inverse_mix_columns.v" \
+"../../../../AES.srcs/sources_1/new/inverse_sbox.v" \
+"../../../../AES.srcs/sources_1/new/inverse_shift_rows.v" \
+"../../../../AES.srcs/sources_1/new/inverse_sub_bytes.v" \
+"../../../../AES.srcs/sources_1/new/key_expansion.v" \
+"../../../../AES.srcs/sources_1/new/mix_columns.v" \
+"../../../../AES.srcs/sources_1/new/sbox.v" \
+"../../../../AES.srcs/sources_1/new/shift_rows.v" \
+"../../../../AES.srcs/sources_1/new/sub_bytes.v" \
+"../../../../AES.srcs/sim_1/new/tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
